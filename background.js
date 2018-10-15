@@ -12,13 +12,13 @@ function send_fill_single_element(tab) {
 
 chrome.contextMenus.create({
     id: "context_menu_lorem_fill_this_page",
-    title: "Lorem Fill this page ⌘⇧1",
+    title: "WeTransfer Fill this page ⌘⇧1",
     contexts: ["page"]
 });
 
 chrome.contextMenus.create({
     id: "context_menu_lorem_fill_this_element",
-    title: "Lorem Fill this single element",
+    title: "WeTransfer Fill this single element",
     contexts: ["editable"]
 });
 

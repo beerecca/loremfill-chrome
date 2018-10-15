@@ -11,7 +11,7 @@
     },
     "commands": {
         "trigger_fill_all_forms": {
-            "description": "Lorem Fill this page",
+            "description": "WeTransfer Fill this page",
             "suggested_key": {
                 "default": "Ctrl+Shift+1",
                 "mac": "Command+Shift+1"
@@ -54,7 +54,7 @@
     },
     "incognito": "split",
     "manifest_version": 2,
-    "name": "Lorem Fill",
+    "name": "WeTransfer Fill",
     "offline_enabled": true,
     "options_page": "options.html",
     "permissions": [
@@ -62,6 +62,6 @@
         "contextMenus",
         "storage"
     ],
-    "short_name": "LoremFill",
+    "short_name": "WeTransferFill",
     "version": "1.11"
 }

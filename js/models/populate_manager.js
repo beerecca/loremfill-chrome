@@ -10,6 +10,9 @@ var PopulateManager = Backbone.Model.extend({
 
 var SimulantPopulator = Backbone.Model.extend({
   populate: function(element, value) {
+    if (element.prop('type') === 'checkbox' && value === 'checked') {
+      element.click();
+    }
     simulant.fire(element[0], simulant('focus'));
     element.val(value);
     simulant.fire(element[0], simulant('input'));
@@ -20,6 +23,9 @@ var SimulantPopulator = Backbone.Model.extend({
 
 var DefaultPopulator = Backbone.Model.extend({
   populate: function(element, value) {
+    if (element.prop('type') === 'checkbox' && value === 'checked') {
+      element.click();
+    }
     element.val(value);
     this.fireEvent(element.get(0), 'change');
     this.fireEvent(element.get(0), 'blur');
